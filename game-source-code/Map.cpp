@@ -1,6 +1,6 @@
 #include "Map.h"
 
-Map::Map(): MapSize_({0,120, 1000, 720}) {}
+Map::Map(PlayerMovement player): player_(player), MapSize_({0,120, 1000, 720}) {}
  // map dimensions calculated via mathematics
 // 1000 x 900 screen assumed; to be made flexible soon. Map does not fill entire screen
 
@@ -22,4 +22,14 @@ void Map::duggedCoordinates(){
         }
       }
 
+}
+
+Rectangle Map::getMapSize(){
+
+   return MapSize_;
+}
+
+vector<Rectangle> Map::giveDuggedCoordinates(){
+
+    return dug_;
 }

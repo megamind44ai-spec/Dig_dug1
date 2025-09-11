@@ -10,8 +10,10 @@ using namespace std;
 
 class Map{
     public:
-    Map();
+    Map(PlayerMovement player);
     void duggedCoordinates();
+    Rectangle getMapSize();
+    vector<Rectangle> giveDuggedCoordinates();
     
     
 
