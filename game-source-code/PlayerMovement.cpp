@@ -11,3 +11,7 @@ void PlayerMovement::move(){
 
 }
 
+Vector2 PlayerMovement::GetPlayerPosistion(){
+
+    return playerPosition_;
+}
