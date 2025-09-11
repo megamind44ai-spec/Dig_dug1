@@ -7,7 +7,7 @@ SplashScreen::SplashScreen(): splash_("../resources/splash_screen.png"){};
 
 unique_ptr<Mode> SplashScreen::update(){
 
-splash_.Draw(20, 100);
+splash_.Draw(0, 0);
         
    
 
