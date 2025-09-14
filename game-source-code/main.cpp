@@ -9,18 +9,9 @@ int main()
     SetTargetFPS(60);
     
 
-    unique_ptr<Mode> mode = std::make_unique<SplashScreen>();
-
-
 while (!window.ShouldClose()){
         BeginDrawing();
         ClearBackground(BLACK);
-
-
-           if (auto next = mode->update()) {
-                mode = std::move(next);
-            }
-
 
 
             EndDrawing();

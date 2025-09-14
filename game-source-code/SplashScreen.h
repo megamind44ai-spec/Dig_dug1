@@ -1,12 +1,12 @@
 #pragma once
-#include "Mode.h"
-#include "GameScreen.h"
 
-class SplashScreen: public Mode{
+#include "raylib-cpp.hpp"
+
+class SplashScreen{
 
     public:
     SplashScreen();
-    unique_ptr<Mode> update() override;
+    void drawSplashScreen ();
 
 
     private:

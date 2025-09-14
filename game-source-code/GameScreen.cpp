@@ -1,12 +1,13 @@
 #include "GameScreen.h"
 
 
-GameScreen::GameScreen(){}
+GameScreen::GameScreen(): map_(player_), drawer_(player_, map_){}
 
+void GameScreen::playGame(){
+   
 
-unique_ptr<Mode> GameScreen::update(){
-
-  
-    return nullptr;
-    
 }
+
+
+
+

@@ -1,11 +1,23 @@
 #pragma once
-#include "Mode.h"
 #include "raylib-cpp.hpp"
+#include "PlayerMovement.h"
+#include "Map.h"
+#include "Drawer.h"
 
 
-class GameScreen: public Mode{
+class GameScreen{
     public:
     GameScreen();
-    unique_ptr<Mode> update() override;
+
+    void playGame();
+
+
+    private:
+    PlayerMovement player_;
+    Map map_;
+    Drawer drawer_;
+    
+
+    
 
 };
