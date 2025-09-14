@@ -3,9 +3,13 @@
 
 GameScreen::GameScreen(): map_(player_), drawer_(player_, map_){}
 
-void GameScreen::playGame(){
-   
-
+// GameScreen.cpp
+void GameScreen::playGame() {
+    player_.move();
+    map_.duggedCoordinates();  // record current tile
+    drawer_.mapDrawer();
+    drawer_.duggedDrawer();    // draw dug tiles
+    drawer_.playerDrawer();
 }
 
 

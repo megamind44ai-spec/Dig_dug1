@@ -1,6 +1,6 @@
 #include "Drawer.h"
 
-Drawer::Drawer(PlayerMovement player, Map map): player_(player), map_(map) {}
+Drawer::Drawer(PlayerMovement& player, Map& map): player_(player), map_(map) {}
 
 void Drawer::playerDrawer(){
 

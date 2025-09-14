@@ -6,13 +6,13 @@
 
 class Drawer{
     public:
-    Drawer(PlayerMovement player, Map map);
+    Drawer(PlayerMovement& player, Map& map);
     void playerDrawer();
     void mapDrawer();
     void duggedDrawer();
 
     private:
-    PlayerMovement player_;
+    PlayerMovement& player_;
     Map map_;
     Vector2 playerSize_ = {40,40};
 
