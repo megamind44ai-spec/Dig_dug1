@@ -19,10 +19,8 @@ class Map{
 
 
     private:
-    vector<Rectangle> dug_; //used to store coordinates of where the player passed, hence "digging".
-    //Better than vectors in terms of time complexity. Vectors are O(n) vs unordered_set being O(1) in terms of iteration through
-    //the container. Better for memory once the player moves throughout the entire map.
-    PlayerMovement player_;
+    vector<Rectangle> dug_; 
+    PlayerMovement& player_;
     Rectangle MapSize_;
 
 };

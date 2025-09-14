@@ -8,7 +8,9 @@ void GameScreen::playGame() {
     player_.move();
     map_.duggedCoordinates();  // record current tile
     drawer_.mapDrawer();
-    drawer_.duggedDrawer();    // draw dug tiles
+     drawer_.duggedDrawer(); 
+  
+      // draw dug tiles
     drawer_.playerDrawer();
 }
 

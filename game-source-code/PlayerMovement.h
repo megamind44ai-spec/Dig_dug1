@@ -1,7 +1,7 @@
 #pragma once
 #include "raylib-cpp.hpp"
 
-   const int PLAYER_SPEED = 3.0;
+   const int PLAYER_SPEED = 10.0;
 
 class PlayerMovement{ //class that deals with the player's movement logic
     public:

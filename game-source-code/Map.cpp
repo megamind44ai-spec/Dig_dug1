@@ -12,15 +12,12 @@ void Map::duggedCoordinates(){
         float y_coordinate = player_.GetPlayerPosistion().y;
         Rectangle block{x_coordinate, y_coordinate, PLAYER_SIZE, PLAYER_SIZE};
         
-     
-      for(const auto& searcher: dug_){
         
-        if(searcher.x != block.x && searcher.y != block.y){
 
-            dug_.push_back(block);
-
-        }
-      }
+          dug_.push_back(block);
+        
+     
+      
 
 }
 
@@ -32,4 +29,9 @@ Rectangle Map::getMapSize(){
 vector<Rectangle> Map::giveDuggedCoordinates(){
 
     return dug_;
+}
+
+bool operator==(Rectangle first, Rectangle second){
+
+  return first.x == second.x && first.y == second.y;
 }

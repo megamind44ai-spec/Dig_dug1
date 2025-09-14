@@ -13,7 +13,7 @@ class Drawer{
 
     private:
     PlayerMovement& player_;
-    Map map_;
+    Map& map_;
     Vector2 playerSize_ = {40,40};
 
 };
