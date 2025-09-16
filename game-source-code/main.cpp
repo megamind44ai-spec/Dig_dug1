@@ -1,8 +1,7 @@
 #include "SplashScreen.h"
 #include "GameScreen.h"
 
-const int SCREEN_WIDTH = 1000;
-const int SCREEN_HEIGHT = 900;
+
 
 int main()
 {
@@ -15,7 +14,7 @@ int main()
 
 while (!window.ShouldClose()){
         BeginDrawing();
-        ClearBackground(BLACK);
+        ClearBackground(DARKBLUE);
         if(IsKeyPressed(KEY_ENTER)){isGameScreen = true;}
 
         if(!isGameScreen){

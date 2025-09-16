@@ -4,8 +4,6 @@
 #include <algorithm>
 
 
-const int PLAYER_SIZE = 40;
-
 using namespace std;
 
 class Map{
