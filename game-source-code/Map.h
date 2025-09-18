@@ -12,6 +12,8 @@ class Map{
     void duggedCoordinates();
     Rectangle getMapSize();
     vector<Rectangle> giveDuggedCoordinates();
+    void initMonsterPositions();
+  
     
     
 
