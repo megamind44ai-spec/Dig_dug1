@@ -16,7 +16,7 @@ class PlayerMovement{ //class that deals with the player's movement logic
     public:
     PlayerMovement(float xPosition = 500.0f , float yPosition = 500.0f);
     void move(Direction dir);
-   Vector2 GetPlayerPosistion() const;
+   Vector2 GetPlayerPosition() const;
     
     private:
     Vector2 playerPosition_;

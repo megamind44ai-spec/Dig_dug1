@@ -4,7 +4,7 @@ Drawer::Drawer(PlayerMovement& player, Map& map): player_(player), map_(map) {}
 
 void Drawer::playerDrawer(){
 
-    DrawRectangleV(player_.GetPlayerPosistion(), playerSize_, RAYWHITE );
+    DrawRectangleV(player_.GetPlayerPosition(), playerSize_, RAYWHITE );
 }
 
 void Drawer::mapDrawer(){

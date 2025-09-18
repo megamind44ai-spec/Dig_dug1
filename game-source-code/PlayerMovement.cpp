@@ -4,17 +4,18 @@ PlayerMovement::PlayerMovement(float xPosition, float yPosition):playerPosition_
 
 void PlayerMovement::move(Direction dir){
 
-    switch(dir){
+   switch (dir) {
+        case Direction::LEFT:  playerPosition_.x -= PLAYER_SPEED; break;
+        case Direction::RIGHT: playerPosition_.x += PLAYER_SPEED; break;
+        case Direction::UP:    playerPosition_.y -= PLAYER_SPEED; break;
+        case Direction::DOWN:  playerPosition_.y += PLAYER_SPEED; break;
 
-        case Direction::LEFT: playerPosition_.x -= PLAYER_SPEED;
-        case Direction::RIGHT: playerPosition_.x += PLAYER_SPEED;
-        case Direction::UP: playerPosition_.y -= PLAYER_SPEED;
-        case Direction::DOWN: playerPosition_.y += PLAYER_SPEED;
         case Direction::INPUT: {
-         if(IsKeyDown(KEY_LEFT)){playerPosition_.x -= PLAYER_SPEED;}
-         else if(IsKeyDown(KEY_RIGHT)){playerPosition_.x += PLAYER_SPEED;}
-         else if(IsKeyDown(KEY_UP)){playerPosition_.y -= PLAYER_SPEED;}
-         else if(IsKeyDown(KEY_DOWN)){playerPosition_.y += PLAYER_SPEED;}}
+            if      (IsKeyDown(KEY_LEFT))  playerPosition_.x -= PLAYER_SPEED;
+            else if (IsKeyDown(KEY_RIGHT)) playerPosition_.x += PLAYER_SPEED;
+            else if (IsKeyDown(KEY_UP))    playerPosition_.y -= PLAYER_SPEED;
+            else if (IsKeyDown(KEY_DOWN))  playerPosition_.y += PLAYER_SPEED;
+        }; break;
 
     }
    
@@ -30,7 +31,7 @@ void PlayerMovement::move(Direction dir){
 
 }
 
-Vector2 PlayerMovement::GetPlayerPosistion() const{
+Vector2 PlayerMovement::GetPlayerPosition() const{
 
     return playerPosition_;
 }

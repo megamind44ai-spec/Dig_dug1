@@ -8,8 +8,8 @@ void Map::duggedCoordinates(){
 
 
     
-        float x_coordinate = player_.GetPlayerPosistion().x;
-        float y_coordinate = player_.GetPlayerPosistion().y;
+        float x_coordinate = player_.GetPlayerPosition().x;
+        float y_coordinate = player_.GetPlayerPosition().y;
         Rectangle block{x_coordinate, y_coordinate, PLAYER_SIZE, PLAYER_SIZE};
         
         
